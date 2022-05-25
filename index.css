@@ -82,6 +82,11 @@ nav ul a{
     font-size: 22px;
     text-decoration: none;
     margin: 0 69px;
+    align-items: center;
+    text-align: center;
+    /* border: solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 15px; */
 }
 
 nav{
@@ -113,10 +118,45 @@ section{
     nav img{
         display: none;
     }
+    nav ul a{
+        font-size: 16px;
+        padding: 0 0 0 0;
+        margin: 0 10px;
+    }
     h1{
         font-size: 22px;
     }
     h3{
         font-size: 20px;
     }
+}
+
+@media (max-width: 480px){
+    header .container{
+        padding: 0 30px;
+    }
+    header .container img{
+        size: 120px;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
+        padding: 0 15px;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    nav ul a{
+        font-size: 12px;
+    }
+    button{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    h3{
+        font-weight: 400;
+    }
+
 }
