@@ -91,18 +91,36 @@ nav ul a{
 
 nav{
     background-color: var(--dark-purple);
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: space-between;
-    height: 65px;
+    height: 85px;
     padding: 0 90px;
     position: sticky;
     top: 0;
 }
 
-section{
-    background: #838383;
-    height: 1080px;
+nav ul a svg{
+    display: none;
+}
+
+.about-me{
+    height: calc(100vh - 65px);
+    display: flex;
+    padding: 90px;
+}
+
+.about-me .container{
+    width: 50%;
+    margin: 50px;
+}
+
+.about-me .img-container{
+    padding-left: 80px;
+}
+
+.about-me .img-container img{
+    width: 100%;
 }
 
 @media(max-width:767px){
@@ -112,7 +130,7 @@ section{
 
     header .container img{
         display: inline;
-        height: 50px;
+        height: 80px;
         margin-bottom: 30px;
     }
     nav img{
@@ -136,14 +154,14 @@ section{
         padding: 0 30px;
     }
     header .container img{
-        size: 120px;
+        height: 60px;
     }
     nav{
         position: fixed;
         width: 100%;
         bottom: 0;
         top: unset;
-        padding: 0 15px;
+        padding: 0 10px;
     }
     nav ul{
         justify-content: center;
