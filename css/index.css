@@ -175,6 +175,9 @@ nav ul a svg{
 }
 
 @media (max-width: 480px){
+    p{
+        font-size: 10px;
+    }
     header .container{
         padding: 0 30px;
     }
