@@ -7,7 +7,7 @@
     --pink: #E358FA;
     --light-pink: #FF77FA;
     --txt-white: #FFFFFF;
-
+    --dark-dark-purple: hsl(240, 42%, 10%);
 }
 
 *{
@@ -83,6 +83,7 @@ header .container img{
 nav{
     background-color: var(--dark-purple);
     display:flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     height: 87px;
@@ -90,10 +91,11 @@ nav{
     position: sticky;
     top: 0;
     border-bottom: 2px solid var(--pink);
+    z-index: 1;
 }
 
 nav ul{
-    display: block;
+    display: flex;
 }
 
 nav ul a{
@@ -136,8 +138,8 @@ nav ul a svg{
 }
 
 .servico{
-    height: calc(100vh - 85px);
-    margin: 48px;
+    height: calc(100vh);
+    padding: 90px;
 }
 
 .servico h1{
@@ -149,18 +151,73 @@ nav ul a svg{
     text-align: center;
 }
 
-.servico .serv1{
+.servico .container{
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.servico .container .serv1{
+    position:relative;
+    text-align: center;
+}
+
+.servico .container .serv1{
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     width: 300px;
     height: 350px;
-    background: #34347F;
-    mix-blend-mode: multiply;
-    border-width: 0px 0px 2px 2px;
+    background: var(--dark-dark-purple);
+    /* mix-blend-mode: multiply; */
+    border-width: 2px 2px 4px 4px;
     border-style: solid;
-    border-color: #000000;
-    filter: blur(4px);
+    border-color: var(--light-purple);
+    /* filter: blur(4px); */
     border-radius: 15px;
+}
+.servico .container .serv2{
+    box-sizing: border-box;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: var(--dark-dark-purple);
+    /* mix-blend-mode: multiply; */
+    border-width: 2px 2px 4px 2px;
+    border-style: solid;
+    border-color: var(--light-purple);
+    /* filter: blur(4px); */
+    border-radius: 15px;
+}
+
+.servico .container .serv3{
+    box-sizing: border-box;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: var(--dark-dark-purple);
+    /* mix-blend-mode: multiply; */
+    border-width: 2px 4px 4px 2px;
+    border-style: solid;
+    border-color: var(--light-purple);
+    /* filter: blur(4px); */
+    border-radius: 15px;
+}
+
+.portfolio{
+    height: calc(100vh);
+    padding: 90px;
+}
+
+.portfolio h1{
+    text-align: center;
+}
+
+.portfolio h3{
+    font-weight: 400;
+    text-align: center;
 }
 
 @media(max-width:767px){
