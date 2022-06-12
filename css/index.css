@@ -7,7 +7,7 @@
     --pink: #E358FA;
     --light-pink: #FF77FA;
     --txt-white: #FFFFFF;
-    --dark-dark-purple: hsl(240, 42%, 10%);
+    --dark-dark-purple: #0f0f24;
 }
 
 *{
@@ -143,6 +143,7 @@ nav ul a svg{
 }
 
 .servico h1{
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -178,6 +179,23 @@ nav ul a svg{
     /* filter: blur(4px); */
     border-radius: 15px;
 }
+
+.servico .container .serv1 p{
+    margin: 5px;
+}
+
+.servico .container .serv1 svg{
+    background-color: var(--dark-dark-purple);
+    border-radius: 20%;
+    border: solid var(--light-purple) 2px;
+    padding: 5px;
+    align-items: center;
+    width: 104px;
+    height: 104px;
+    stroke-width: 1;
+    margin-top: 30px;
+}
+
 .servico .container .serv2{
     box-sizing: border-box;
     position: relative;
@@ -190,6 +208,22 @@ nav ul a svg{
     border-color: var(--light-purple);
     /* filter: blur(4px); */
     border-radius: 15px;
+}
+
+.servico .container .serv2 p{
+    margin: 5px;
+}
+
+.servico .container .serv2 svg{
+    background-color: var(--dark-dark-purple);
+    border-radius: 20%;
+    border: solid var(--light-purple) 2px;
+    padding: 5px;
+    align-items: center;
+    width: 104px;
+    height: 104px;
+    stroke-width: 1;
+    margin-top: 30px;
 }
 
 .servico .container .serv3{
@@ -206,18 +240,111 @@ nav ul a svg{
     border-radius: 15px;
 }
 
+.servico .container .serv3 p{
+    margin: 5px;
+}
+
+.servico .container .serv3 svg{
+    background-color: var(--dark-dark-purple);
+    border-radius: 20%;
+    border: solid var(--light-purple) 2px;
+    padding: 5px;
+    align-items: center;
+    width: 104px;
+    height: 104px;
+    stroke-width: 1;
+    margin-top: 30px;
+}
+
 .portfolio{
     height: calc(100vh);
     padding: 90px;
 }
 
 .portfolio h1{
+    margin-top: 20px;
     text-align: center;
 }
 
 .portfolio h3{
     font-weight: 400;
     text-align: center;
+}
+
+.portfolio .container{
+    margin-top: 50px;
+    position: relative;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.portfolio .container .port{
+    box-sizing: border-box;
+    position: relative;
+    background: var(--dark-dark-purple);
+    border-width: 2px 4px 4px 4px;
+    border-style: solid;
+    border-color: var(--light-purple);
+    border-radius: 15px;
+}
+
+.portfolio .container .port p{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.portfolio .container .port svg{
+    background-color: var(--dark-dark-purple);
+    border-radius: 20%;
+    border: solid var(--light-purple) 2px;
+    padding: 5px;
+    align-items: center;
+    width: 104px;
+    height: 104px;
+    stroke-width: 1;
+    margin-top: 30px;
+}
+
+.curriculo{
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+}
+
+.curriculo .container{
+    width: 100%;
+    height: fit-content;
+    padding: 0 150px 0 100px;
+}
+
+.curriculo .container h1{
+    text-align: center;
+}
+
+.curriculo .container button{
+    left: 25%;
+    right: 25%;
+    align-self: right;
+}
+
+.curriculo .container .cont-cont{
+    display: flex;
+}
+
+.curriculo .container .cont-cont img{
+    position: static;
+    height: 400px;
+}
+
+.curriculo .container .cont-cont ul{
+    margin-left: 50px;
+}
+
+.curriculo .container .cont-cont li{
+    font-size: 18px;
+    margin: 14px 0;
 }
 
 @media(max-width:767px){
